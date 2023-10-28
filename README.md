@@ -13,4 +13,4 @@ The corresponding node indexes on each edge: head tail.
 
 The output txt file format:
 
-Index of nodes in print order: first node, second node... final node.
+Index of nodes in print order: first node, second node...... final node.
