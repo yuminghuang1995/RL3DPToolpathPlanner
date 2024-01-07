@@ -1,4 +1,4 @@
-# RL-based-toolpath-planning-framework
+# RL-based-planner-for-3D-printing-toolpath
 
 Supplementary material for Reinforcement Learning Based Planner for 3D Printing Toolpath:
 
