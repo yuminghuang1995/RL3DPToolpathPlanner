@@ -1,6 +1,6 @@
 # RL-based-toolpath-planning-framework
 
-Supplementary material for Reinforcement Learning Based Framework for Large-scale Toolpath Planning of Additive Manufacturing:
+Supplementary material for Reinforcement Learning Based Planner for 3D Printing Toolpath:
 
 The input txt file format:
 
