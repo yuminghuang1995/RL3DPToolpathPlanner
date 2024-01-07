@@ -15,3 +15,9 @@ The corresponding node indexes on each edge: head tail.
 The output txt file format:
 
 Index of nodes in print order: first node, second node, ... , final node.
+
+The output_with_norm txt file format:
+
+Index of nodes in print order: first node, second node, ... , final node.
+
+Three-dimensional coordinates of nodes: X Y Z , and printing normal: nx ny nz.
