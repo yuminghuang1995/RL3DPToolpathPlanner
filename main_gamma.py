@@ -78,12 +78,9 @@ def process_block(env_name, printing_mode, LSG_range):
     ori_center = np.array([0, 0, 0])
     rays = func.generate_rays(16)
 
-    start_time = time.time()
     start_node = 0
     global_beam_seq = calculate(start_node, state_dim, init_adjacency_matrix, G, coordinates, edges, max_edge_pass, env_name, angle_limit,
                                 beam_num, boundary_nodes_array, heat_radius, calc_mode, material, block, rl, random_beam, ori_center, dataset_path, rays, train_mode, dataset_mode, max_edge_length, savept)
-    end_time = time.time()
-    elapsed_time = end_time - start_time
 
     best_ave_angle = 100000
     best_limit_angle = 100000
@@ -145,7 +142,6 @@ def process_block(env_name, printing_mode, LSG_range):
             print('Best distance', '%.3f' % best_dis)
             # print('Best edge pass:', len(best_path) - 1)
 
-        print("Run time：{:.2f}min".format(elapsed_time/60))
         # print('Best path', best_path)
 
 
