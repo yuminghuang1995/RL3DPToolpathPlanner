@@ -11,7 +11,7 @@ Platform: Windows 10/11
 
 Environment: python 3.9 + pyTorch 1.12
 
-![](Teaser.png)
+![](Algorithm.png)
 
 # Usage
 
