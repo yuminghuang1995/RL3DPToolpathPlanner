@@ -90,9 +90,6 @@ def calculate(k, state_dim, init_adjacency_matrix, G, coordinates, edges, max_ed
             G_new, new_state, new_adjacency_matrix, new_state_adjacency, node_mapping, new_node_dict, new_coords_array = func.create_new_graph(
                 G_orig, coordinates, edges, adjacency_matrix, state, init_adjacency_matrix, max_edge_pass, state_dim, heat_radius, mode=mode)
 
-            if index % 50 == 0:
-                func.draw_graph(env_name, G_orig, coordinates, state, adjacency_matrix, i, index, output=True, draw=False, subgraph=False, mode=mode, show=material)
-
 
             optional_action, lifting, lines = func.anti_self_locking_subgraph(G_orig, G_new, adjacency_matrix, node_mapping, state, beam_seq[i][0], new_adjacency_matrix, new_state,
                                                                               coordinates, heat_radius, init_adjacency_matrix, rays, train_mode, mode=mode, material=material)
