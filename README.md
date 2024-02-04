@@ -17,7 +17,7 @@ Environment: python 3.9 + pyTorch 1.12
 
 **Step 1:** Open the main.py file
 
-**Step 2:** Change the variable env_name to your model
+**Step 2:** Change the variable env_name to your model. We provide 9 initial models corresponding to wireframe, CCF and metal printing.
 
 **Input file formats**
 
@@ -31,7 +31,7 @@ Number of edges in the input graph:
 
 The corresponding node indexes on each edge: head index, tail index.
 
-**Step 3:** Run the main.py file
+**Step 3:** Run the main.py file. Wait for the progress bar to reach its end and finish post-processing. Then we get the output file, which is divided into results and outputs.
 
 **Output file formats**
 
