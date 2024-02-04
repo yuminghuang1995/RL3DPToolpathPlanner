@@ -31,7 +31,9 @@ Number of edges in the input graph:
 
 The corresponding node indexes on each edge: head index, tail index.
 
-**Step 3:** Run the main.py file. Wait for the progress bar to reach its end and finish post-processing. Then we get the output file, which is divided into results and outputs.
+**Step 3:** Change the size of the LSG range. The default is 6.
+
+**Step 4:** Run the main.py file. Wait for the progress bar to reach its end and finish post-processing. Then we get the output file, which is divided into results and outputs.
 
 **Output file formats:**
 
