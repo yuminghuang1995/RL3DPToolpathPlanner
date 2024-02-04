@@ -9,7 +9,7 @@ This paper presents an efficient \textit{reinforcement learning} (RL) based plan
 
 Platform: Windows 10/11
 
-Package: python 3.9 + pyTorch 1.12
+Environment: python 3.9 + pyTorch 1.12
 
 ![](Teaser.png)
 
