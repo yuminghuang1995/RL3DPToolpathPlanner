@@ -11,11 +11,15 @@ Platform: Windows
 
 Package: python 3.9 + pyTorch 1.12
 
+![](Teaser.png)
+
 # Usage
 
+**Step 1:** Open the main.py file
 
+**Step 2:** Change the variable env_name to your model
 
-# Input and output file formats:
+**Input file formats**
 
 The input txt files are under the data folder:
 
@@ -27,6 +31,10 @@ Number of edges in the input graph:
 
 The corresponding node indexes on each edge: head index, tail index.
 
+**Step 3:** Run the main.py file
+
+**Output file formats**
+
 The result txt files are under the results folder:
 
 Index of nodes in print order: first node, second node, ... , final node.
@@ -34,5 +42,3 @@ Index of nodes in print order: first node, second node, ... , final node.
 The output txt files are under the outputs folder:
 
 Three-dimensional coordinates of nodes: X Y Z , and printing normal: nx ny nz.
-
-The code is coming soon.
