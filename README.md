@@ -11,6 +11,8 @@ This paper presents an efficient reinforcement learning (RL) based planner for c
 
 **Environment:** python 3.9 + pyTorch 1.12
 
+**Package:** numpy + matplotlib + networkx + scipy
+
 ![](algorithm.png)
 
 # Usage
