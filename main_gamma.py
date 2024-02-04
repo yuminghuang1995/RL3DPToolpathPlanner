@@ -1,5 +1,4 @@
 import random
-import time
 # import gym
 import numpy as np
 import collections
@@ -20,7 +19,6 @@ import os
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from calculate_module import calculate
-import time
 import concurrent.futures
 import pickle
 
