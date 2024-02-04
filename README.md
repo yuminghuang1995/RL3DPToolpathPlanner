@@ -15,13 +15,13 @@ This paper presents an efficient reinforcement learning (RL) based planner for c
 
 # Usage
 
-**Step 1:** Open the main.py file
+**Step 1:** Open the **main.py** file
 
-**Step 2:** Change the variable env_name to your model. We provide 9 initial models corresponding to wireframe, CCF and metal printing.
+**Step 2:** Change the **env_name** to your model. We provide 9 initial models corresponding to wireframe, CCF and metal printing.
 
 **Input file formats:**
 
-The input txt files are under the data folder:
+The input txt files are under the **data** folder:
 
 Number of nodes in the input graph:
 
@@ -31,9 +31,9 @@ Number of edges in the input graph:
 
 The corresponding node indexes on each edge: head index, tail index.
 
-**Step 3:** Change the size of the LSG range. The default is 6.
+**Step 3:** Change the size of the **LSG range**. The default is 6.
 
-**Step 4:** Run the main.py file. 
+**Step 4:** Run the **main.py** file. 
 
 **Step 5:** Wait for the progress bar to reach the end and finish post-processing. Check the figure folder to see the final generated graph.
 
@@ -41,10 +41,10 @@ The corresponding node indexes on each edge: head index, tail index.
 
 **Output file formats:**
 
-The result txt files are under the results folder:
+The result txt files are under the **results** folder:
 
 Index of nodes in print order: first node, second node, ... , final node.
 
-The output txt files are under the outputs folder:
+The output txt files are under the **outputs** folder:
 
 Three-dimensional coordinates of nodes: X Y Z , and printing normal: nx ny nz.
