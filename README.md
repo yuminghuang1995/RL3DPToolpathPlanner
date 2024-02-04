@@ -7,9 +7,9 @@ This paper presents an efficient reinforcement learning (RL) based planner for c
 
 # Installation
 
-Platform: Windows 10/11
+**Platform:** Windows 10/11
 
-Environment: python 3.9 + pyTorch 1.12
+**Environment:** python 3.9 + pyTorch 1.12
 
 ![](Algorithm.png)
 
@@ -19,7 +19,7 @@ Environment: python 3.9 + pyTorch 1.12
 
 **Step 2:** Change the variable env_name to your model. We provide 9 initial models corresponding to wireframe, CCF and metal printing.
 
-**Input file formats**
+**Input file formats:**
 
 The input txt files are under the data folder:
 
@@ -33,7 +33,7 @@ The corresponding node indexes on each edge: head index, tail index.
 
 **Step 3:** Run the main.py file. Wait for the progress bar to reach its end and finish post-processing. Then we get the output file, which is divided into results and outputs.
 
-**Output file formats**
+**Output file formats:**
 
 The result txt files are under the results folder:
 
