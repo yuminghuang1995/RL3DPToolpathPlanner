@@ -50,3 +50,5 @@ Index of nodes in print order: first node, second node, ... , final node.
 The output txt files are under the **outputs** folder:
 
 Three-dimensional coordinates of nodes: X Y Z , and printing normal: nx ny nz.
+
+![](manufacturing_results.png)
