@@ -1,4 +1,5 @@
 import random
+import time
 # import gym
 import numpy as np
 import collections
@@ -7,7 +8,6 @@ import torch
 import torch.nn.functional as F
 import torch.nn as nn
 import matplotlib.pyplot as plt
-import rl_utils
 import math
 import networkx as nx
 import functions as func
@@ -78,12 +78,11 @@ def process_block(env_name, printing_mode, LSG_range):
 
     start_node = 0
     global_beam_seq = calculate(start_node, state_dim, init_adjacency_matrix, G, coordinates, edges, max_edge_pass, env_name, angle_limit,
-                                beam_num, boundary_nodes_array, heat_radius, calc_mode, material, block, rl, random_beam, ori_center, dataset_path, rays, train_mode, dataset_mode, max_edge_length, savept)
+                                beam_num, boundary_nodes_array, heat_radius, calc_mode, material, block, rl, random_beam, ori_center,
+                                dataset_path, rays, train_mode, dataset_mode, max_edge_length, savept)
 
-    best_ave_angle = 100000
     best_limit_angle = 100000
     best_lifting = 100000
-    best_reward = 0
     best_path = []
     best_dis = 0
     location = 0
@@ -122,25 +121,21 @@ def process_block(env_name, printing_mode, LSG_range):
                     else:
                         if angle_ >= 179:
                             temp_lifting += 1
-            temp_ave_angle = temp_ave_angle / len(temp_best_path)
+
             if temp_limit_angle < best_limit_angle or (
                     temp_limit_angle == best_limit_angle and temp_lifting < best_lifting):
 
                 best_limit_angle = temp_limit_angle
-                best_ave_angle = temp_ave_angle
                 best_path = temp_best_path
                 best_lifting = temp_lifting
-                best_reward = global_beam_seq[i][1]
                 best_dis = temp_distance
                 location = i
 
-        if material == 'CCF':
-            print('Best limit angle:', best_limit_angle)
-            best_dis = best_dis * 0.001
-            print('Best distance', '%.3f' % best_dis)
-            # print('Best edge pass:', len(best_path) - 1)
-
-        # print('Best path', best_path)
+        # if material == 'CCF':
+        #     print('Best limit angle:', best_limit_angle)
+        #     best_dis = best_dis * 0.001
+        #     print('Best distance', '%.3f' % best_dis)
+        #     print('Best edge pass:', len(best_path) - 1)
 
 
         adjacency_matrix_final = func.create_adj_matrix(init_adjacency_matrix.copy(), global_beam_seq[location][0])
@@ -166,11 +161,6 @@ def process_block(env_name, printing_mode, LSG_range):
         coordinates_path = [G.nodes[node]['pos'] for node in best_path]
         total_length = len(coordinates_path)
 
-        if material == 'PLA3D':
-            print('Calculating maximum deformation...')
-            total_max_def, max_ind = func.calculate_total_max_deformation(f"data/Node{env_name}.txt", f"results/{env_name}_results.txt")
-            print('Max Deform:', '%.4f' % total_max_def)
-            # print('Max Ind:', max_ind)
 
         if calc_mode == 'Euler':
             if material == 'CCF':
@@ -361,8 +351,6 @@ def process_block(env_name, printing_mode, LSG_range):
 
         if calc_mode == 'Tsp':
             print('Post processing start...')
-            print('len(coordinates_path):', len(coordinates_path))
-            print('len(coordinates):', len(coordinates))
 
             num_layers = 1
             folder_path = "outputs"
