@@ -17,9 +17,9 @@ This paper presents a learning based planner for computing optimized 3D printing
 
 # Usage
 
-**Step 1:** Open the **main.py** file Open a terminal and type **python main.py --model MODEL**. 
+**Step 1:** Open a terminal and type **python main.py --model MODEL**. We provide over 10 initial models (**MODEL**) corresponding to wireframe, CCF and metal printing.
 
-**Step 2:** Change the **MODEL** to your model. We provide over 10 initial models corresponding to wireframe, CCF and metal printing.
+**Step 2:** Change the **MODEL** to your model. 
 
 **Input file formats:**
 
