@@ -27,11 +27,11 @@ The input txt files are under the **data** folder:
 
 Number of nodes in the input graph:
 
-Three-dimensional coordinates of nodes: X Y Z.
+Three-dimensional coordinates of nodes: **X Y Z**.
 
 Number of edges in the input graph:
 
-The corresponding node indexes on each edge: head index, tail index.
+The corresponding node indexes on each edge: **head index, tail index**.
 
 **Step 3:** Change the checkpoint. You can use the pre-trained initial checkpoint in the **checkpoint** folder (which is automatically called by the program), or you can skip the checkpoint and generate it during training. 
 
