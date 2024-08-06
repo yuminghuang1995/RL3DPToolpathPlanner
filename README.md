@@ -19,7 +19,7 @@ This paper presents a learning based planner for computing optimized 3D printing
 
 **Step 1:** Open a terminal and type **python main.py --model MODEL**. We provide over 10 initial models (replace **MODEL**) corresponding to different printing modes.
 
-**Step 2:** Change the **MODEL** to your model. 
+**Step 2:** Change the **MODEL** to your model. Format: **Model name_Print mode**.
 
 **Input file formats:**
 
