@@ -35,7 +35,7 @@ The corresponding node indexes on each edge: **head index, tail index**.
 
 **Step 3:** Change the checkpoint. You can use the pre-trained initial checkpoint in the **checkpoint** folder (which is automatically called by the program), or you can skip the checkpoint and generate it during training. 
 
-**Step 4:** Enter to start the **main.py**. 
+**Step 4:** **Enter** to start the **main.py**. 
 
 **Step 5:** Wait for the progress bar to reach the end and finish post-processing. Check the **figure** folder to see the process and final generated graph.
 
