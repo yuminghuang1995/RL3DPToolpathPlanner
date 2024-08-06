@@ -33,7 +33,7 @@ Number of edges in the input graph:
 
 The corresponding node indexes on each edge: **head index, tail index**.
 
-**Step 3:** Change the checkpoint. You can use the pre-trained initial checkpoint in the **checkpoint** folder (which is automatically called by the program, default to wireframe models), or you can skip the checkpoint and generate it during training. 
+**Step 3:** Change the checkpoint. You can use the pre-trained models in the **checkpoint** folder (which is automatically called by the program, default to wireframe models), or you can skip the checkpoint and generate it during training. 
 
 **Step 4:** **Enter** to start the **main.py**. 
 
