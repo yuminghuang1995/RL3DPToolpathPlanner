@@ -17,9 +17,9 @@ This paper presents an efficient reinforcement learning (RL) based planner for c
 
 # Usage
 
-**Step 1:** Open the **main.py** file
+**Step 1:** Open the **main.py** file Open a terminal and type **python main.py --model MODEL**. 
 
-**Step 2:** Change the **env_name** to your model. We provide 9 initial models corresponding to wireframe, CCF and metal printing.
+**Step 2:** Change the **MODEL** to your model. We provide over 10 initial models corresponding to wireframe, CCF and metal printing.
 
 **Input file formats:**
 
@@ -33,13 +33,11 @@ Number of edges in the input graph:
 
 The corresponding node indexes on each edge: head index, tail index.
 
-**Step 3:** Change the size of the **LSG range**. The default is 6.
+**Step 4:** Enter to start the **main.py**. 
 
-**Step 4:** Run the **main.py** file. 
+**Step 5:** Wait for the progress bar to reach the end and finish post-processing. Check the **figure** folder to see the process and final generated graph.
 
-**Step 5:** Wait for the progress bar to reach the end and finish post-processing. Check the figure folder to see the final generated graph.
-
-**Step 6:** Then we get the output file, which is divided into results and outputs.
+**Step 6:** Finally we get the output file, which is divided into **results** and **outputs**.
 
 **Output file formats:**
 
