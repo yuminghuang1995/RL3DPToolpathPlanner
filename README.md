@@ -17,7 +17,7 @@ This paper presents a learning based planner for computing optimized 3D printing
 
 # Usage
 
-**Step 1:** Open a terminal and type **python main.py --model MODEL**. We provide over 10 initial models (**MODEL**) corresponding to wireframe, CCF and metal printing.
+**Step 1:** Open a terminal and type **python main.py --model MODEL**. We provide over 10 initial models (**MODEL**) corresponding to different printing methods.
 
 **Step 2:** Change the **MODEL** to your model. 
 
@@ -32,6 +32,8 @@ Three-dimensional coordinates of nodes: X Y Z.
 Number of edges in the input graph:
 
 The corresponding node indexes on each edge: head index, tail index.
+
+**Step 3:** Change the checkpoint. You can use the pre-trained initial checkpoint in the **checkpoint** folder (which is automatically called by the program), or you can skip the checkpoint and generate it during training. 
 
 **Step 4:** Enter to start the **main.py**. 
 
