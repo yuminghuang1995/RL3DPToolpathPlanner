@@ -1,4 +1,4 @@
-# RL-based-planner-for-3D-printing-toolpath
+# Learning Based Toolpath Planner on Diverse Graphs
 
 ![](teaser.png)
 
