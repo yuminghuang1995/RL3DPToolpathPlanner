@@ -48,12 +48,9 @@ def process_block(env_name, printing_mode):
 
     rays = func.generate_rays(16)
 
-    # start_time = time.time()
     start_node = 0
     global_beam_seq = calculate(start_node, state_dim, init_adjacency_matrix, G, coordinates, edges, max_edge_pass, env_name, angle_limit,
                                 beam_num, boundary_nodes_array, heat_radius, calc_mode, material, block, rl, random_beam, rays, train_mode, max_edge_length, savept, faces)
-    # end_time = time.time()
-    # elapsed_time = end_time - start_time
 
     best_limit_angle = 100000
     best_lifting = 100000
@@ -106,13 +103,6 @@ def process_block(env_name, printing_mode):
                 best_dis = temp_distance
                 location = i
 
-        # if material == 'CCF':
-        #     print('Best limit angle:', best_limit_angle)
-        #     best_dis = best_dis * 0.001
-        #     print('Best distance', '%.3f' % best_dis)
-
-        # print("Run time：{:.2f}min".format(elapsed_time/60))
-
         adjacency_matrix_final = func.create_adj_matrix(init_adjacency_matrix.copy(), global_beam_seq[location][0])
         G_orig = func.create_heat_field(best_path, G.copy(), heat_radius)
 
@@ -133,11 +123,6 @@ def process_block(env_name, printing_mode):
 
         coordinates_path = [G.nodes[node]['pos'] for node in best_path]
         total_length = len(coordinates_path)
-
-        # if material == 'PLA3D':
-        #     print('Calculating...')
-        #     total_max_def, max_ind = func.calculate_total_max_deformation(f"data/Node{env_name}.txt", f"results/{env_name}_results.txt")
-        #     print('Max Deform:', '%.4f' % total_max_def)
 
         if calc_mode == 'Euler':
             if material == 'CCF':
