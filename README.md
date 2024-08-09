@@ -39,7 +39,7 @@ The corresponding node indexes on each edge: **head index, tail index**.
 
 **Step 5:** Wait for the progress bar to reach the end and finish post-processing. Check the **figure** folder to see the process and final generated graph.
 
-**Step 6:** Finally we get the output file, which is divided into **results** (waypoint information) and **outputs** (Output to the printer).
+**Step 6:** Finally you get the output file, which is divided into **results** (waypoint information) and **outputs** (Output to the printer).
 
 **Output file formats:**
 
