@@ -1,5 +1,5 @@
 # Learning Based Toolpath Planner on Diverse Graphs 
-# (SIGGRAPH Asia 2024, ACM TOG)
+###  (SIGGRAPH Asia 2024, ACM TOG)
 
 ![](teaser.png)
 
