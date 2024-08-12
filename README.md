@@ -46,7 +46,7 @@ The corresponding node indexes on each edge: **head index, tail index**.
 
 The result txt files are under the **results** folder:
 
-Index of nodes in print order: first node, second node, ... , final node.
+Index of nodes in printing order: first node, second node, ... , final node.
 
 The output txt files are under the **outputs** folder:
 
