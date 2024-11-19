@@ -12,7 +12,7 @@ This paper presents a learning based planner for computing optimized 3D printing
 
 **Environment:** python 3.9 + pyTorch 1.12
 
-**Package:** numpy + matplotlib + networkx + scipy
+**Package:** numpy<2 + matplotlib + networkx + scipy
 
 ![](algorithm.png)
 
