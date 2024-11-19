@@ -18,7 +18,7 @@ This paper presents a learning based planner for computing optimized 3D printing
 
 # Usage
 
-**Step 1:** Open a terminal and type **python main.py --model MODEL** (eg. **python main.py --model Bunny_wireframe**). We provide over 10 initial models (replace **MODEL**) corresponding to different printing modes (CCF, wireframe and metal). Type **python main.py --help** to check all the models we provide.
+**Step 1:** Open a terminal and type **python main.py --model MODEL** (eg. **python main.py --model Bunny_wireframe**). We provide over 10 initial models corresponding to different printing modes (CCF, wireframe and metal). Type **python main.py --help** to check all the models we provide.
 
 **Step 2:** Change the **MODEL** to your model. Format: **Model name_Printing mode**.
 
