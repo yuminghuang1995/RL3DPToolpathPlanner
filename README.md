@@ -10,9 +10,11 @@ This paper presents a learning based planner for computing optimized 3D printing
 
 **Platform:** Windows 10/11
 
-**Environment:** python 3.9 + pyTorch 1.12
+**Environment:** python 3.8 + pyTorch 1.13
 
 **Package:** numpy<2 + matplotlib + networkx + scipy
+
+The environment can be installed using the **environment.yaml** file.
 
 ![](algorithm.png)
 
