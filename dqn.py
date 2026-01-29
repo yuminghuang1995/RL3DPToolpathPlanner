@@ -560,11 +560,10 @@ def train(env_name, coordinates, node_mapping, lines, rays, G, G_new, new_adjace
                 action, action_index = agent.take_action(state, state_adjacency, pre_pre_action, adjacency_matrix_flow, edge_pass, coords_array, greedy=True)
                 next_state, next_state_adjacency, reward, done, angle, next_coords_array, next_lines = env.step(action, state, state_adjacency, edge_pass, adjacency_matrix_flow,
                                                                                                                 coords_array, temp_path, temp_lines)
-                if reward != sequences[0][1]:
-                    new_sequence = [[sequences[0][0], sequences[0][1]]]
-                else:
+                if reward >= sequences[0][1]:
                     new_sequence = [[[action], reward]]
-
+                else:
+                    new_sequence = [[sequences[0][0], sequences[0][1]]]
                 break
 
             while not done:
@@ -628,6 +627,7 @@ def train(env_name, coordinates, node_mapping, lines, rays, G, G_new, new_adjace
             agent.save_checkpoint(new_state_adjacency)
 
     return new_sequence
+
 
 
 
